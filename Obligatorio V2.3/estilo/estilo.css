@@ -1,0 +1,365 @@
+/* Fuente global */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+button {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  padding: 0.3rem 1rem;
+  background-color: #75a7d6;
+  color: white;
+}
+
+button:hover {
+  color: black;
+  background-color: #d6dde4;
+  transition: 0.4s all;
+}
+
+select {
+  font-family: 'Poppins', sans-serif;
+}
+
+input {
+  font-family: 'Poppins', sans-serif;
+  outline: none;
+}
+
+/* ############################### HEADER ###############################  */
+
+header {
+  background: radial-gradient(
+    circle,
+    rgba(44, 115, 201, 1) 0%,
+    rgba(10, 56, 112, 1) 100%
+  );
+
+  color: white;
+  min-height: 35vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 4.7rem;
+  font-weight: 400;
+  margin: 1rem 0rem;
+}
+
+header h2 {
+  font-size: 2.5rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+header p {
+  font-size: 1.7rem;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+header button {
+  margin-left: 2rem;
+  margin-top: 0.5rem;
+}
+
+/* Contenedor Iniciar sesión */
+
+.contentedor-iniciar-sesion {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.contentedor-iniciar-sesion input {
+  border-radius: 5px;
+  border: none;
+  padding: 3px;
+  text-align: center;
+}
+
+.mensajeLogIn {
+  font-size: 1.3rem;
+}
+
+main {
+  padding: 3rem;
+  min-height: 65vh;
+}
+
+.item-log-in {
+  font-size: 1.5rem;
+  margin-left: 2rem;
+}
+
+.img-contenedor {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 4rem;
+}
+
+.img-columna {
+  width: 30%;
+  margin: 0rem 2rem;
+}
+
+.img-columna h2 {
+  font-size: 2.3rem;
+}
+
+.img-columna p {
+  font-size: 1.4rem;
+}
+
+.img-contenedor img {
+  max-width: 260px;
+  border-radius: 5px;
+}
+
+footer {
+  background: radial-gradient(
+    circle,
+    rgba(44, 115, 201, 1) 0%,
+    rgba(10, 56, 112, 1) 100%
+  );
+  text-align: center;
+  color: white;
+  font-size: 1.3rem;
+  padding: 1rem;
+}
+
+/* Registros */
+
+/* Registro docente */
+.contenedor-ventana-registro-docente {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+}
+
+.registroDocente {
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2rem;
+  border-radius: 5px;
+}
+.registroDocente h3 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.item-formulario {
+  margin-top: 2.3rem;
+}
+
+.registroDocente label {
+  display: block;
+  font-size: 1.6rem;
+}
+
+.registroDocente input {
+  width: 100%;
+  border: rgb(219, 219, 219) 2px solid;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+.registroDocente input:focus {
+  width: 100%;
+  border: rgb(148, 148, 148) 2px solid;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+.registroDocente button {
+  width: 100%;
+  margin-top: 2rem;
+  padding: 0.8rem 1rem;
+}
+
+.cerrarBtnFormDocente {
+  display: block;
+  margin-left: 30rem;
+  cursor: pointer;
+}
+
+.cerrarBtnFormAlumno {
+  display: block;
+  margin-left: 30rem;
+  cursor: pointer;
+}
+
+/* Registro alumno */
+
+.contenedor-ventana-registro-alumno {
+  background-color: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+}
+
+.registroAlumno {
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 2rem;
+  border-radius: 5px;
+}
+.registroAlumno h3 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.item-forAlumno {
+  margin-top: 2.3rem;
+}
+
+.registroAlumno label {
+  display: block;
+  font-size: 1.6rem;
+}
+
+.registroAlumno label {
+  display: block;
+  font-size: 1.6rem;
+}
+
+.registroAlumno input {
+  width: 100%;
+  border: rgb(219, 219, 219) 2px solid;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+.registroAlumno input:focus {
+  width: 100%;
+  border: rgb(148, 148, 148) 2px solid;
+  border-radius: 5px;
+  padding: 1rem;
+}
+
+.registroAlumno button {
+  width: 100%;
+  margin-top: 2rem;
+  padding: 0.8rem 1rem;
+}
+
+.registroAlumno select {
+  width: 100%;
+  border: rgb(219, 219, 219) 2px solid;
+  padding: 1rem;
+  border-radius: 5px;
+  outline: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.selectNiveles {
+  text-align: center;
+}
+/* ######################################################################## */
+/* ##################### *** INTERIOR APLICACIÓN ***  #####################  */
+/* ######################################################################## */
+
+/* NAVEGACIÓN */
+
+.navegacion {
+  background-color: #cce2f7;
+  background: radial-gradient(
+    circle,
+    rgba(44, 115, 201, 1) 0%,
+    rgba(10, 56, 112, 1) 100%
+  );
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 12vh;
+}
+
+.navegacion nav {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  font-size: 1.65rem;
+  padding: 2rem;
+}
+
+.item-lista {
+  padding: 2rem;
+  margin-left: 1rem;
+  text-align: center;
+  list-style: none;
+}
+
+.navegacion ul:hover {
+  border: 1px solid white;
+  color: white;
+}
+
+.item-lista a {
+  text-decoration: none;
+  color: white;
+}
+
+.seccion {
+  text-align: center;
+}
+
+.seccion1 {
+  background-color: rgb(238, 169, 238);
+}
+.seccion2 {
+  background-color: rgb(255, 176, 130);
+}
+.seccion3 {
+  background-color: rgb(141, 248, 203);
+}
+.seccion4 {
+  background-color: rgb(136, 204, 250);
+}
+
+.mostrar-ventana {
+  display: block;
+}
+
+.ocultar-ventana {
+  display: none;
+}
